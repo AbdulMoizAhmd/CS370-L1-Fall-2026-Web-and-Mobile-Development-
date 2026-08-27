@@ -1,0 +1,17 @@
+
+body{
+    background-color: pink
+}
+h1{
+    color:blue;
+    font-family: "Arial", "sans-serif"
+
+}
+h2{
+    color:green;
+    padding: 10px;
+}
+p{
+    color:aqua;
+    font-size: 20px;
+}
