@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demos</title>
+    <link rel="stylesheet" href="portfolio2.css">
+</head>
+
+<body>
+
+    <!-- Top Banner Section -->
+    <header>
+        <h1>Welcome To My Website</h1>
+    </header>
+
+    <!-- Main Navigation Bar -->
+    <nav>
+        <a href="portfolio 2.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="demos.html">Demos</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Layout Container -->
+    <div class="layout-wrapper">
+
+        <!-- Primary Page Content -->
+        <main>
+
+            <h2>Project Demo</h2>
+
+            <p>
+                This page features a demo of one of the automation projects
+                I have worked on.
+            </p>
+
+            <article>
+
+                <h3>Automation Workflow Demo</h3>
+
+                <!-- YouTube Video -->
+                <iframe
+                    id="youtube-player"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/-dYKTHIOZ8k?enablejsapi=1"
+                    title="Automation Workflow Demo"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+
+                <p>
+                    This video demonstrates a booking automation system and
+                    provides an overview of how the workflow operates.
+                </p>
+
+            </article>
+
+        </main>
+
+        <!-- Sidebar Section -->
+        <aside>
+
+            <h3>About This Demo</h3>
+
+            <p>
+                The demo highlights my interest in automation and workflow
+                development using tools such as n8n, Twilio, and Google Sheets.
+            </p>
+
+        </aside>
+
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2026 My Portfolio. Abdul Moiz Ahmed aa08811.</p>
+    </footer>
+
+
+    <!-- YouTube IFrame Player API -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+
+    <script>
+
+        var player;
+
+        function onYouTubeIframeAPIReady() {
+
+            player = new YT.Player('youtube-player', {
+
+                events: {
+                    'onReady': onPlayerReady
+                }
+
+            });
+
+        }
+
+        function onPlayerReady(event) {
+            console.log("YouTube API Player is ready");
+        }
+
+    </script>
+
+</body>
+
+</html>
