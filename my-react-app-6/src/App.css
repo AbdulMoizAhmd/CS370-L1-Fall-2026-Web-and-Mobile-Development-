@@ -1,0 +1,8 @@
+.app-layout {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-column {
+  width: 300px;
+}
