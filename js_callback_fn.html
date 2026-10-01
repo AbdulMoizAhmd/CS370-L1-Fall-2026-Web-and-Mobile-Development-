@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>JavaScript Calculator</h1>
+
+    <input type="number" id="num1" placeholder="Enter first number">
+    <input type="number" id="num2" placeholder="Enter second number">
+
+    <br><br>
+
+    <button onclick="calculate(add)">Add</button>
+    <button onclick="calculate(subtract)">Subtract</button>
+    <button onclick="calculate(multiply)">Multiply</button>
+    <button onclick="calculate(divide)">Divide</button>
+
+    <p id="demo"></p>
+
+    <script>
+
+        // Function Expression
+        const add = function (...numbers) {
+            try {
+                let result = numbers[0] + numbers[1];
+
+                console.log("Addition:", result);
+
+                return result;
+            }
+            catch(err) {
+                console.log(err.message);
+            }
+        };
+
+
+        // Arrow Function
+        const subtract = (...numbers) => {
+            try {
+                let result = numbers[0] - numbers[1];
+
+                console.log("Subtraction:", result);
+
+                return result;
+            }
+            catch(err) {
+                console.log(err.message);
+            }
+        };
+
+
+        // Function Expression
+        const multiply = function (...numbers) {
+            try {
+                let result = numbers[0] * numbers[1];
+
+                console.log("Multiplication:", result);
+
+                return result;
+            }
+            catch(err) {
+                console.log(err.message);
+            }
+        };
+
+
+        // Arrow Function
+        const divide = (...numbers) => {
+            try {
+
+                if (numbers[1] == 0) {
+                    throw new Error("Cannot divide by zero");
+                }
+
+                let result = numbers[0] / numbers[1];
+
+                console.log("Division:", result);
+
+                return result;
+            }
+            catch(err) {
+                console.log(err.message);
+
+                return err.message;
+            }
+        };
+
+
+        // Callback Function
+        const calculate = (operation) => {
+
+            let num1 = Number(document.getElementById("num1").value);
+            let num2 = Number(document.getElementById("num2").value);
+
+            let answer = operation(num1, num2);
+
+            document.getElementById("demo").innerHTML =
+                "Result: " + answer;
+        };
+
+
+        // Calling all functions in console
+        console.log(add(10, 5));
+        console.log(subtract(10, 5));
+        console.log(multiply(10, 5));
+        console.log(divide(10, 5));
+
+    </script>
+
+</body>
+
+</html>
