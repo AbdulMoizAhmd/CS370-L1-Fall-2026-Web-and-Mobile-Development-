@@ -1,0 +1,89 @@
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.calculator {
+  background-color: white;
+  width: 100%;
+  max-width: 400px;
+  padding: 25px;
+  border: 1px solid black;
+}
+
+h1 {
+  text-align: center;
+  color: black;
+}
+
+.subtitle {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.unit-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.unit-buttons button {
+  flex: 1;
+}
+
+.unit-buttons .selected {
+  background-color: #d9eaff;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid black;
+  font-size: 15px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.action-buttons button {
+  flex: 1;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.result {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.result h2 {
+  margin: 10px 0;
+}
